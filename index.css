@@ -1,0 +1,78 @@
+/*Tags*/
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  background-color: #eeeeee;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Classes*/
+
+.body-container{
+    padding: 0% 10%;
+    margin-top: 50px;
+}
+
+.flex-container {
+  display: flex;
+  background-color: #222831;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 10%;
+  height: 50px;
+  box-shadow: 1px 1px 10px 5px grey;
+}
+
+.flex-container:hover {
+  box-shadow: 1px 1px 15px 10px grey;
+}
+
+.nav-item {
+  color: #f0f5f9;
+}
+
+.profile-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+}
+
+.grid-item{
+    box-shadow: 1px 1px 10px 1px grey;
+    border-radius: 0.5rem;
+    padding: 4%;
+}
+
+.grid-item:hover{
+    box-shadow: 1px 1px 15px 1px grey;
+}
+
+/*IDs*/
+
+/*Media*/
+@media screen and (max-width: 600px){
+    .flex-container{
+        justify-content: right;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+}
