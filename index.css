@@ -12,11 +12,25 @@ a {
   text-decoration: none;
 }
 
+table{
+  border-collapse: separate;
+  border-spacing: 0px 10px;
+}
+
 /*Classes*/
 
 .body-container{
     padding: 0% 10%;
     margin-top: 50px;
+}
+
+.playfair-display{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+}
+
+.align-right{
+  text-align: right;
 }
 
 .flex-container {
@@ -39,23 +53,30 @@ a {
 }
 
 .profile-icon {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+float: left;
   height: 70px;
   border-radius: 50%;
 }
 
 .grid-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.5fr 1fr;
     gap: 5%;
 }
 
 .grid-item{
     box-shadow: 1px 1px 10px 1px grey;
     border-radius: 0.5rem;
-    padding: 4%;
+    padding: 2% 4%;
+}
+
+.title-div{
+  box-shadow: 1px 1px 10px 1px grey;
+    border-radius: 5rem;
+    padding: 0.6%;
+    margin-bottom: 50px;
+    text-align: center;
+    letter-spacing: 5px;
 }
 
 .grid-item:hover{
@@ -65,15 +86,23 @@ a {
 /*IDs*/
 
 /*Media*/
-@media screen and (max-width: 600px){
-    .flex-container{
-        justify-content: right;
-    }
-}
-
-@media screen and (max-width: 700px){
+@media screen and (max-width: 950px){
     .grid-container{
         grid-template-columns: 1fr;
         gap: 2%;
     }
+}
+
+@media screen and (max-width: 630px){
+  .profile-icon{
+      margin-top: 10px;
+      margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 430px){
+  .profile-icon{
+      margin-top: 25px;
+      margin-left: 15px;
+  }
 }
