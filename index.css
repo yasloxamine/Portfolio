@@ -22,6 +22,7 @@ table{
 .body-container{
     padding: 0% 10%;
     margin-top: 50px;
+    margin-bottom: 150px;
 }
 
 .playfair-display{
@@ -31,6 +32,9 @@ table{
 
 .align-right{
   text-align: right;
+}
+.align-center{
+  text-align: center;
 }
 
 .flex-container {
@@ -61,13 +65,15 @@ float: left;
 .grid-container{
     display: grid;
     grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 5%;
 }
 
 .grid-item{
     box-shadow: 1px 1px 10px 1px grey;
     border-radius: 0.5rem;
-    padding: 2% 10%;
+    padding: 0% 6%;
+    max-height: 600px;
 }
 
 .title-div{
@@ -83,26 +89,37 @@ float: left;
     box-shadow: 1px 1px 15px 1px grey;
 }
 
+.grid-item-span2{
+  grid-column: span 2;
+  padding: 0% 3%;
+}
+
 /*IDs*/
 
 /*Media*/
 @media screen and (max-width: 950px){
+    .grid-item{
+        grid-column: span 2;
+    }
     .grid-container{
-        grid-template-columns: 1fr;
-        gap: 2%;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
     }
 }
 
-@media screen and (max-width: 630px){
-  .profile-icon{
-      margin-top: 10px;
-      margin-left: 10px;
-  }
+@media screen and (max-width: 414px){
+  .profile-icon {
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+      height: 70px;
+      border-radius: 50%;
+    }
 }
 
-@media screen and (max-width: 430px){
-  .profile-icon{
-      margin-top: 25px;
-      margin-left: 15px;
-  }
+@media screen and (max-width: 607px){
+  .grid-item{
+    padding-bottom: 0;
 }
+}
+
+
