@@ -67,7 +67,7 @@ float: left;
 .grid-item{
     box-shadow: 1px 1px 10px 1px grey;
     border-radius: 0.5rem;
-    padding: 2% 4%;
+    padding: 2% 10%;
 }
 
 .title-div{
