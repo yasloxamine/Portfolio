@@ -12,28 +12,28 @@ a {
   text-decoration: none;
 }
 
-table{
+table {
   border-collapse: separate;
   border-spacing: 0px 10px;
 }
 
 /*Classes*/
 
-.body-container{
-    padding: 0% 10%;
-    margin-top: 50px;
-    margin-bottom: 150px;
+.body-container {
+  padding: 0% 10%;
+  margin-top: 50px;
+  margin-bottom: 150px;
 }
 
-.playfair-display{
+.playfair-display {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
 }
 
-.align-right{
+.align-right {
   text-align: right;
 }
-.align-center{
+.align-center {
   text-align: center;
 }
 
@@ -57,39 +57,39 @@ table{
 }
 
 .profile-icon {
-float: left;
+  float: left;
   height: 70px;
   border-radius: 50%;
 }
 
-.grid-container{
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 5%;
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 5%;
 }
 
-.grid-item{
-    box-shadow: 1px 1px 10px 1px grey;
-    border-radius: 0.5rem;
-    padding: 0% 6%;
-    max-height: 600px;
-}
-
-.title-div{
+.grid-item {
   box-shadow: 1px 1px 10px 1px grey;
-    border-radius: 5rem;
-    padding: 0.6%;
-    margin-bottom: 50px;
-    text-align: center;
-    letter-spacing: 5px;
+  border-radius: 0.5rem;
+  padding: 0% 6%;
+  max-height: 800px;
 }
 
-.grid-item:hover{
-    box-shadow: 1px 1px 15px 1px grey;
+.title-div {
+  box-shadow: 1px 1px 10px 1px grey;
+  border-radius: 5rem;
+  padding: 0.6%;
+  margin-bottom: 50px;
+  text-align: center;
+  letter-spacing: 5px;
 }
 
-.grid-item-span2{
+.grid-item:hover {
+  box-shadow: 1px 1px 15px 1px grey;
+}
+
+.grid-item-span2 {
   grid-column: span 2;
   padding: 0% 3%;
 }
@@ -97,29 +97,30 @@ float: left;
 /*IDs*/
 
 /*Media*/
-@media screen and (max-width: 950px){
-    .grid-item{
-        grid-column: span 2;
-    }
-    .grid-container{
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-    }
+@media screen and (max-width: 950px) {
+  .grid-item {
+    grid-column: span 2;
+  }
+  .grid-container {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
 }
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 414px) {
   .profile-icon {
     margin-top: 10px;
     margin-left: 10px;
     float: left;
-      height: 70px;
-      border-radius: 50%;
-    }
+    height: 70px;
+    border-radius: 50%;
+  }
+  .grid-container {
+    gap: 30px;
+  }
 }
 
-@media screen and (max-width: 607px){
-  .grid-item{
+@media screen and (max-width: 607px) {
+  .grid-item {
     padding-bottom: 0;
+  }
 }
-}
-
-
