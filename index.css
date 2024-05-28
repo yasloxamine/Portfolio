@@ -5,11 +5,13 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-style: normal;
-  background-color: #eeeeee;
+  color: #222831;
+  background-color: #EEEEEE;
 }
 
 a {
   text-decoration: none;
+  color: #EEEEEE;
 }
 
 table {
@@ -66,14 +68,15 @@ table {
   display: grid;
   grid-template-columns: 0.5fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 5%;
+  gap: 2%;
 }
 
 .grid-item {
-  box-shadow: 1px 1px 10px 1px grey;
-  border-radius: 0.5rem;
+  box-shadow: 0px 0px 5px 1px grey;
+  border-radius: 1rem;
   padding: 0% 6%;
   max-height: 800px;
+  background-color: white;
 }
 
 .title-div {
@@ -83,6 +86,7 @@ table {
   margin-bottom: 50px;
   text-align: center;
   letter-spacing: 5px;
+  background-color: white;
 }
 
 .grid-item:hover {
