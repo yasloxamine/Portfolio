@@ -5,13 +5,13 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-style: normal;
-  color: #222831;
-  background-color: #EEEEEE;
+  color: #eeeeee;
+  background-color: #eeeeee;
 }
 
 a {
   text-decoration: none;
-  color: #EEEEEE;
+  color: #eeeeee;
 }
 
 table {
@@ -47,11 +47,11 @@ table {
   padding: 20px;
   gap: 10%;
   height: 50px;
-  box-shadow: 1px 1px 10px 5px grey;
+  box-shadow: 1px 1px 5px 1px #222831;
 }
 
 .flex-container:hover {
-  box-shadow: 1px 1px 15px 10px grey;
+  box-shadow: 1px 1px 5px 3px #222831;
 }
 
 .nav-item {
@@ -68,29 +68,34 @@ table {
   display: grid;
   grid-template-columns: 0.5fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 2%;
+  gap: 10px;
 }
 
 .grid-item {
-  box-shadow: 0px 0px 5px 1px grey;
-  border-radius: 1rem;
+  box-shadow: 1px 1px 5px 1px #222831;
+
   padding: 0% 6%;
   max-height: 800px;
-  background-color: white;
+  background-color: #393e46;
+}
+
+.grid-item:hover {
+  box-shadow: 1px 1px 5px 3px #222831;
 }
 
 .title-div {
-  box-shadow: 1px 1px 10px 1px grey;
-  border-radius: 5rem;
+  box-shadow: 1px 1px 5px 1px #222831;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
   padding: 0.6%;
   margin-bottom: 50px;
   text-align: center;
   letter-spacing: 5px;
-  background-color: white;
+  background-color: #393e46;
 }
 
-.grid-item:hover {
-  box-shadow: 1px 1px 15px 1px grey;
+.title-div:hover {
+  box-shadow: 1px 1px 5px 3px #222831;
 }
 
 .grid-item-span2 {
@@ -118,13 +123,14 @@ table {
     height: 70px;
     border-radius: 50%;
   }
-  .grid-container {
-    gap: 30px;
-  }
 }
 
 @media screen and (max-width: 607px) {
   .grid-item {
     padding-bottom: 0;
+  }
+
+  .profile-icon {
+    height: 65px;
   }
 }
