@@ -67,7 +67,6 @@ table {
 }
 
 .grid-item {
-  max-height: 800px;
   background-color: white;
   border-radius: 0.5rem;
   padding: 10px;
@@ -113,11 +112,11 @@ table {
 }
 
 #experience-div {
-  grid-column: span 4;
+  grid-column: span 3;
 }
 
 #education-div {
-  grid-column: span 3;
+  grid-column: span 2;
 }
 
 #personal-info-container {
@@ -135,9 +134,9 @@ table {
 
 #experience-container {
   display: grid;
-  grid-template-columns: 1fr 4fr 0.5fr;
+  grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 40px 20px;
+  gap: 40px 0px;
 }
 
 #education-container {
