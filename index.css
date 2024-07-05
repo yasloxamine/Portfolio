@@ -192,4 +192,8 @@ table {
   #education-div {
     grid-column: span 4;
   }
+
+  #currently-learning-div{
+    grid-column: span 4;
+  }
 }
