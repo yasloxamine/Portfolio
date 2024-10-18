@@ -124,15 +124,11 @@ footer{
   grid-area: 2/1/3/2;
 }
 
-#technical-div {
+#technical-div,#experience-div{
   grid-column: span 3;
 }
 
-#experience-div {
-  grid-column: span 3;
-}
-
-#education-div {
+#education-div,#projects-div{
   grid-column: span 2;
 }
 
@@ -195,19 +191,7 @@ footer{
     grid-area: 2/1/3/5;
   }
 
-  #technical-div {
-    grid-column: span 4;
-  }
-
-  #experience-div {
-    grid-column: span 4;
-  }
-
-  #education-div {
-    grid-column: span 4;
-  }
-
-  #currently-learning-div{
+  #technical-div,#experience-div,#education-div,#currently-learning-div,#projects-div{
     grid-column: span 4;
   }
 }
