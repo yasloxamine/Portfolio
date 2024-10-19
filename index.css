@@ -141,14 +141,14 @@ footer{
 #technical-skills-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 20px 0px;
 }
 
 #experience-container {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   gap: 40px 0px;
 }
 
@@ -157,6 +157,10 @@ footer{
   grid-template-columns: 1fr 2fr 0.5fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 40px 20px;
+}
+
+#currently-learning-div{
+  height: 200px;
 }
 
 /*Media*/
