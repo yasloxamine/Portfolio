@@ -152,11 +152,15 @@ footer{
   gap: 40px 0px;
 }
 
-#education-container {
+#education-container,#projects-container {
   display: grid;
   grid-template-columns: 1fr 2fr 0.5fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 40px 20px;
+}
+
+#projects-container{
+  grid-template-rows: repeat(4,1fr);
 }
 
 #currently-learning-div{
