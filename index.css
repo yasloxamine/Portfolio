@@ -160,7 +160,7 @@ footer{
 }
 
 #currently-learning-div{
-  height: 200px;
+  height: 310px;
 }
 
 /*Media*/
@@ -201,5 +201,9 @@ footer{
 
   #technical-div,#experience-div,#education-div,#currently-learning-div,#projects-div{
     grid-column: span 4;
+  }
+
+  #currently-learning-div{
+    height: 200px;
   }
 }
