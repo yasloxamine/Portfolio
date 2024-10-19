@@ -188,6 +188,10 @@ footer{
   #technical-div {
     grid-column: span 2;
   }
+
+  #experience-container{
+    height: 500px;
+   }
 }
 
 @media screen and (max-width:870px){
