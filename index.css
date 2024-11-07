@@ -10,7 +10,7 @@ body {
   font-style: normal;
   color: #222831;
   background-color: #eeeeee;
-  background-image: url('/Portfolio/images/background.png');
+  background-image: url('/images/background.png');
   background-size: cover;
 }
 
@@ -160,7 +160,7 @@ footer{
 }
 
 #projects-container{
-  grid-template-rows: repeat(5,1fr);
+  grid-template-rows: repeat(6,1fr);
 }
 
 #currently-learning-div{
